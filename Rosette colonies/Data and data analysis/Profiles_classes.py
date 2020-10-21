@@ -17,7 +17,7 @@ from copy import deepcopy as deepcopy
 ReloadData = 0
 Write2file = 1
 
-File2ReadName = "Data/"RosettesCombined_recovered.txt""
+File2ReadName = "Data/RosettesCombined_recovered.txt"
 
 """ Reading data from file take a lot of time """
 if ReloadData == 1:
