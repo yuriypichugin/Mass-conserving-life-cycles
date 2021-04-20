@@ -72,9 +72,9 @@ Low_R2 = 3.0/(1-1/3.14/8)
 Low_R3 = 3.0/(1-1/3.14/27)
 Low_sph = 2*2.92
 
-Vert_R1 = 1.0/2.0*(3.14-1)
-Vert_R2 = 2.0/2.0*(3.14*8-1)
-Vert_R3 = 3.0/2.0*(3.14*27-1)
+Vert_R1 = 1.0/2.0*(3.14+1)
+Vert_R2 = 2.0/2.0*(3.14*8+1)
+Vert_R3 = 3.0/2.0*(3.14*27+1)
 
 X_power = np.asarray([3e1, 1e3])
 Coeff_sph = np.power(36*np.pi, 1.0/3.0)/( 2*(np.power(2, 1.0/3.0) - 1) )
@@ -87,10 +87,10 @@ plt.yscale('log')
 plt.xscale('log')
 
 marker_size = 10
-marker_style_sph = dict(marker='^', markersize=marker_size, fillstyle = 'full', color = CLR_S)
-marker_style_R1 = dict(marker='o', markersize=marker_size, fillstyle = 'none', color = CLR_CR1, markeredgewidth = 2)
-marker_style_R2 = dict(marker='o', markersize=marker_size, fillstyle = 'none', color = CLR_CR2, markeredgewidth = 2)
-marker_style_R3 = dict(marker='o', markersize=marker_size, fillstyle = 'none', color = CLR_CR3, markeredgewidth = 2)
+marker_style_sph = dict(marker='o', markersize=marker_size, fillstyle = 'full', color = CLR_S)
+marker_style_R1 = dict(marker='^', markersize=marker_size, fillstyle = 'none', color = CLR_CR1, markeredgewidth = 2)
+marker_style_R2 = dict(marker='^', markersize=marker_size, fillstyle = 'none', color = CLR_CR2, markeredgewidth = 2)
+marker_style_R3 = dict(marker='^', markersize=marker_size, fillstyle = 'none', color = CLR_CR3, markeredgewidth = 2)
 
 plt.plot(X_sph, Y_sph, 'o',  **marker_style_sph)
 plt.plot(X_R1, Y_R1, 'o', **marker_style_R1)
@@ -123,7 +123,7 @@ plt.ylabel('Size at division, '+r'$m^*$', fontsize = LabelsFontSize)
 ax.tick_params(labelsize=TicksFontSize)
 
 if Write2File == 1:
-	plt.savefig('MaturitySize_MMMa_v4.pdf', dpi=300, bbox_inches = 'tight')
+	plt.savefig('MaturitySize_MMMa_v6.pdf', dpi=300, bbox_inches = 'tight')
 
 plt.show()
 
