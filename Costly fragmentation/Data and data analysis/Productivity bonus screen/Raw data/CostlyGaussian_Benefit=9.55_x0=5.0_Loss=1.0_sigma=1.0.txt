@@ -1,0 +1,2 @@
+MaxBenefit, x0, sigma, MassLoss, GrowthRate, OffspringNum, Symmetry, OffspringSet, dummy
+9.55, 5.0, 1.0, 1.0, 4.30663012659681, 2, 0.9903, 3.07; 3.03; 
